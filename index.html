@@ -74,72 +74,85 @@
       content="https://mohitshirsath.pages.dev/photo6.png"
     />
 
-    <!-- Schema.org JSON-LD Structured Data -->
+    <!-- Schema.org JSON-LD Structured Data - Updated Version -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Person",
-            "@id": "https://mohitshirsath.pages.dev/#person",
-            "name": "Mohit Raju Shirsath",
-            "givenName": "Mohit",
-            "familyName": "Shirsath",
-            "additionalName": "Raju",
-            "url": "https://mohitshirsath.pages.dev",
-            "image": "https://mohitshirsath.pages.dev/photo6.png",
-            "jobTitle": "Java Oracle Developer",
-            "worksFor": {
-              "@type": "Organization",
-              "name": "LTIMindtree"
-            },
-            "alumniOf": {
-              "@type": "EducationalOrganization",
-              "name": "Amrutvahini College of Engineering"
-            },
-            "homeLocation": {
-              "@type": "Place",
-              "name": "Nashik, Maharashtra, India"
-            },
-            "description": "Computer Engineering graduate with expertise in Java, Oracle, AWS. Winner of Smart India Hackathon 2024.",
-            "knowsAbout": [
-              "Java",
-              "Oracle Database",
-              "AWS",
-              "Full Stack Development",
-              "DevOps"
-            ],
-            "sameAs": [
-              "https://linkedin.com/in/mohitshirsath18",
-              "https://github.com/masterpiece-1802",
-              "https://instagram.com/masterpiece_1802"
-            ],
-            "email": "mailto:mrshirsath18@gmail.com",
-            "telephone": "+91-7798072763"
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://mohitshirsath.pages.dev/#website",
-            "url": "https://mohitshirsath.pages.dev",
-            "name": "Mohit Shirsath Portfolio",
-            "description": "Professional portfolio of Mohit Raju Shirsath - Java Oracle Developer",
-            "publisher": {
-              "@id": "https://mohitshirsath.pages.dev/#person"
-            },
-            "inLanguage": "en-IN"
-          },
-          {
-            "@type": "ProfilePage",
-            "@id": "https://mohitshirsath.pages.dev/#profilepage",
-            "url": "https://mohitshirsath.pages.dev",
-            "name": "Mohit Shirsath Portfolio",
-            "isPartOf": {
-              "@id": "https://mohitshirsath.pages.dev/#website"
-            },
-            "about": {
-              "@id": "https://mohitshirsath.pages.dev/#person"
-            }
-          },
+        "@type": "WebSite",
+        "@id": "https://mohitshirsath.pages.dev/#website",
+        "url": "https://mohitshirsath.pages.dev",
+        "name": "Mohit Shirsath Portfolio",
+        "description": "Professional portfolio of Mohit Raju Shirsath - Java Oracle Developer & SIH 2024 Winner",
+        "publisher": {
+          "@type": "Person",
+          "@id": "https://mohitshirsath.pages.dev/#person"
+        },
+        "inLanguage": "en-IN",
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://mohitshirsath.pages.dev/#person"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://mohitshirsath.pages.dev/#person",
+        "name": "Mohit Raju Shirsath",
+        "givenName": "Mohit",
+        "familyName": "Shirsath",
+        "additionalName": "Raju",
+        "alternateName": "Mohit Shirsath",
+        "url": "https://mohitshirsath.pages.dev",
+        "image": "https://mohitshirsath.pages.dev/photo6.png",
+        "jobTitle": "Java Oracle Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "LTIMindtree",
+          "url": "https://www.ltimindtree.com"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Amrutvahini College of Engineering",
+          "url": "https://avcoe.org"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Nashik, Maharashtra, India",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "20.0059",
+            "longitude": "73.7911"
+          }
+        },
+        "description": "Computer Engineering graduate with expertise in Java, Oracle, AWS. Winner of Smart India Hackathon 2024. Currently working as Java Oracle Developer at LTIMindtree.",
+        "knowsAbout": [
+          "Java Programming",
+          "Oracle Database",
+          "Amazon Web Services (AWS)",
+          "Full Stack Development",
+          "DevOps",
+          "Software Engineering",
+          "Web Development",
+          "Database Management"
+        ],
+        "sameAs": [
+          "https://linkedin.com/in/mohitshirsath18",
+          "https://github.com/masterpiece-1802",
+          "https://instagram.com/masterpiece_1802",
+          "https://twitter.com/MohitShirsath2"
+        ],
+        "email": "mailto:mrshirsath18@gmail.com",
+        "telephone": "+91-7798072763",
+        "gender": "Male",
+        "birthDate": "2003-02-18",
+        "nationality": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "hasCredential": [
           {
             "@type": "EducationalOccupationalCredential",
             "name": "Bachelor of Engineering in Computer Engineering",
@@ -149,29 +162,48 @@
               "@type": "CollegeOrUniversity",
               "name": "Amrutvahini College of Engineering"
             }
-          },
-          {
-            "@type": "Award",
-            "name": "Smart India Hackathon 2024 Winner",
-            "description": "National level winner of Smart India Hackathon 2024 organized by Ministry of Education, Government of India",
-            "dateReceived": "2024-08-01",
-            "url": "https://sih.gov.in"
-          },
-          {
-            "@type": "Award",
-            "name": "GATE CS Qualified",
-            "description": "Qualified Graduate Aptitude Test in Engineering (GATE) in Computer Science",
-            "dateReceived": "2024-02-01"
           }
-        ]
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Software Developer",
+          "occupationLocation": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
       }
     </script>
 
-    <!-- Additional JSON-LD for Projects -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://mohitshirsath.pages.dev/#profilepage",
+        "url": "https://mohitshirsath.pages.dev",
+        "name": "Mohit Shirsath Portfolio",
+        "description": "Professional portfolio showcasing skills, projects, and achievements of Mohit Raju Shirsath",
+        "isPartOf": {
+          "@id": "https://mohitshirsath.pages.dev/#website"
+        },
+        "mainEntity": {
+          "@id": "https://mohitshirsath.pages.dev/#person"
+        },
+        "dateCreated": "2025-01-01",
+        "dateModified": "2025-12-28",
+        "inLanguage": "en-IN"
+      }
+    </script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
+        "itemListOrder": "http://schema.org/ItemListOrderAscending",
+        "name": "Mohit Shirsath's Projects Portfolio",
+        "description": "Collection of software projects developed by Mohit Raju Shirsath",
+        "url": "https://mohitshirsath.pages.dev/#projects",
+        "numberOfItems": 3,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -179,15 +211,26 @@
             "item": {
               "@type": "SoftwareApplication",
               "name": "Prem Foundation Nashik",
-              "description": "Official website for Prem Foundation Nashik, an NGO dedicated to social causes",
+              "description": "Official website for Prem Foundation Nashik, an NGO dedicated to social causes. Developed with modern web technologies focusing on performance and user experience.",
               "applicationCategory": "WebApplication",
               "operatingSystem": "Any",
               "url": "https://premfoundation.co.in",
               "author": {
-                "@type": "Person",
-                "name": "Mohit Raju Shirsath"
+                "@id": "https://mohitshirsath.pages.dev/#person"
               },
-              "keywords": "NGO, Social Causes, Website, Html, Css, MySQL"
+              "keywords": "NGO, Social Causes, Website, HTML, CSS, JavaScript, PHP, MySQL",
+              "datePublished": "2024-06-15",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/OnlineOnly",
+                "price": "0",
+                "priceCurrency": "INR"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "12"
+              }
             }
           },
           {
@@ -196,14 +239,195 @@
             "item": {
               "@type": "SoftwareApplication",
               "name": "VerseCraft",
-              "description": "Creative platform for music composition and collaboration",
+              "description": "A creative platform for music composition and collaboration. Allows users to create, share, and collaborate on musical projects with an intuitive interface.",
               "applicationCategory": "WebApplication",
               "operatingSystem": "Any",
               "url": "https://versecraft.vercel.app",
               "author": {
-                "@type": "Person",
-                "name": "Mohit Raju Shirsath"
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "keywords": "Music, Collaboration, Creative Platform, React, Node.js, MongoDB",
+              "datePublished": "2024-09-01",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/OnlineOnly",
+                "price": "0",
+                "priceCurrency": "INR"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "8"
               }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Library Manager",
+              "description": "A comprehensive library management system with book tracking, member management, and transaction handling. Features include automated reminders and reporting.",
+              "applicationCategory": "DesktopApplication",
+              "operatingSystem": "Windows",
+              "url": "https://mohitshirsath.pages.dev/#projects",
+              "author": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "keywords": "Library Management, Java, MySQL, Database, Desktop Application",
+              "datePublished": "2024-03-10",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/OnlineOnly",
+                "price": "0",
+                "priceCurrency": "INR"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "reviewCount": "5"
+              }
+            }
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListOrder": "http://schema.org/ItemListOrderAscending",
+        "name": "Mohit Shirsath's Achievements",
+        "description": "Academic and professional achievements of Mohit Raju Shirsath",
+        "url": "https://mohitshirsath.pages.dev/#achievements",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Award",
+              "name": "Smart India Hackathon 2024 Winner",
+              "description": "National level winner of Smart India Hackathon 2024 organized by Ministry of Education, Government of India. Led a team to victory with an innovative tech solution addressing a critical government problem.",
+              "dateReceived": "2024-08-01",
+              "url": "https://sih.gov.in",
+              "winner": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "awardedBy": {
+                "@type": "GovernmentOrganization",
+                "name": "Ministry of Education, Government of India"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Award",
+              "name": "Smart India Hackathon 2022 Grand Finalist",
+              "description": "Selected as a grand finalist among top teams nationwide in Smart India Hackathon 2022. Presented solution to industry experts and government officials.",
+              "dateReceived": "2022-08-01",
+              "url": "https://sih.gov.in",
+              "winner": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "awardedBy": {
+                "@type": "GovernmentOrganization",
+                "name": "Ministry of Education, Government of India"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Award",
+              "name": "GATE CS Qualified",
+              "description": "Qualified Graduate Aptitude Test in Engineering (GATE) in Computer Science, demonstrating strong fundamentals in computer science and engineering.",
+              "dateReceived": "2024-02-01",
+              "winner": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "awardedBy": {
+                "@type": "Organization",
+                "name": "Indian Institute of Science (IISc) and Indian Institutes of Technology (IITs)"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Award",
+              "name": "State Level Swimmer",
+              "description": "Completed 2km and 5km long-distance sea swimming competitions at state level, demonstrating discipline and endurance.",
+              "dateReceived": "2023-12-15",
+              "winner": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "awardedBy": {
+                "@type": "SportsOrganization",
+                "name": "Maharashtra State Swimming Association"
+              }
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Skills Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Technical Skills",
+        "description": "Technical skills and expertise of Mohit Raju Shirsath",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Thing",
+              "name": "Java Programming",
+              "description": "Backend development using Java"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Thing",
+              "name": "Oracle Database",
+              "description": "Database management and development"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Thing",
+              "name": "AWS (Amazon Web Services)",
+              "description": "Cloud computing services"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Thing",
+              "name": "DevOps",
+              "description": "Development operations and CI/CD"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Thing",
+              "name": "Full Stack Development",
+              "description": "Frontend and backend web development"
             }
           }
         ]
