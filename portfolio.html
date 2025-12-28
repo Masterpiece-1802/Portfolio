@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohit Raju Shirsath | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+
+    // custom styles
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div class="certificate-modal" id="certificateModal">
+      <div class="certificate-modal-content">
+        <button class="certificate-modal-close" id="closeModal">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 id="certificateTitle">Certificate</h3>
+        <div id="certificateImageContainer">
+          <!-- Certificate image will be inserted here -->
+        </div>
+        <div class="certificate-details" id="certificateDetails">
+          <!-- Certificate details will be inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <div class="logo-icon"></div>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section with Photo -->
+    <section class="hero" id="home">
+      <div id="vanta-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Mohit Raju Shirsath</span></h1>
+            <div class="typed-text" id="typed-text"></div>
+            <p>
+              A passionate Computer Engineering graduate from Nashik,
+              Maharashtra with expertise in Java, Oracle, AWS, and full-stack
+              development. Currently working as a Java Oracle Developer at
+              LTIMindtree.
+            </p>
+            <div class="btn-container">
+              <a href="#contact" class="btn">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+              </a>
+              <a
+                href="resume.pdf"
+                download
+                class="btn btn-secondary"
+                id="downloadResumeHero"
+              >
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <i class="fas fa-code"></i> View Projects
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <div class="photo-container">
+              <div class="photo-frame">
+                <!-- Your photo with background removed -->
+                <img
+                  src="photo6.png"
+                  alt="Mohit Raju Shirsath"
+                  id="profilePhoto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="particles-bg" id="particles-about"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>
+            Computer Engineering graduate with a passion for technology,
+            innovation, and pushing boundaries both in code and in life.
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>From Nashik to the World of Technology</h3>
+            <p>
+              I'm a dedicated Computer Engineer from Amrutvahini College of
+              Engineering. Currently contributing to enterprise solutions at
+              LTIMindtree as a Java Oracle Developer.
+            </p>
+            <p>
+              My journey is not just about code - it's about discipline,
+              resilience, and pushing limits. As a state-level swimmer who has
+              completed 2km and 5km sea swims, I bring the same determination to
+              my technical work.
+            </p>
+            <p>
+              I believe in creating technology that makes a difference, whether
+              it's through winning national hackathons or building solutions for
+              real-world problems.
+            </p>
+
+            <div class="stats-container">
+              <div class="stat-box">
+                <div class="stat-number">8.0</div>
+                <div class="stat-label">College CGPA</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Competition Wins</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">5km</div>
+                <div class="stat-label">Sea Swim</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3>Education & Experience</h3>
+            <div class="education-timeline">
+              <div class="timeline-item">
+                <h4>Amrutvahini College of Engineering</h4>
+                <span class="timeline-period"
+                  >2021 - 2025 | Computer Engineering</span
+                >
+                <p>CGPA: <span class="percentage">8.0</span></p>
+              </div>
+              <div class="timeline-item">
+                <h4>Shree A P Patel HighSchool</h4>
+                <span class="timeline-period">2019 - 2021 | High School</span>
+                <p>
+                  Percentage: <span class="percentage">88.83%</span> | Rank:
+                  <span class="percentage">1</span>
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h4>Don Bosco School</h4>
+                <span class="timeline-period">2009 - 2019 | School</span>
+                <p>Percentage: <span class="percentage">90.60%</span></p>
+              </div>
+            </div>
+
+            <h3 style="margin-top: 30px">Professional Journey</h3>
+            <div class="timeline-item">
+              <h4>LTIMindtree</h4>
+              <span class="timeline-period"
+                >Nov 2025 - Present | Java Oracle Developer</span
+              >
+              <p>
+                Developing enterprise applications using Java and Oracle
+                technologies.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h4>Innovations Hub Nashik</h4>
+              <span class="timeline-period">Jan 2024 | AWS/DevOps Intern</span>
+              <p>
+                Hands-on experience with AWS services, CI/CD pipelines, and
+                DevOps practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills & Expertise</h2>
+          <p>
+            Technical skills and languages acquired through education,
+            internships, and hands-on project experience.
+          </p>
+        </div>
+
+        <!-- Auto-scrolling Skills -->
+        <div class="skills-section">
+          <div class="skills-track">
+            <!-- Skills will be duplicated via JavaScript for infinite scroll -->
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-java"></i>
+              </div>
+              <div class="skill-name">Java</div>
+              <div class="skill-type">Backend</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="skill-name">Oracle</div>
+              <div class="skill-type">Database</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <div class="skill-name">AWS</div>
+              <div class="skill-type">Cloud</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="skill-name">DevOps</div>
+              <div class="skill-type">Operations</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-name">HTML/CSS</div>
+              <div class="skill-type">Frontend</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-type">Frontend</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="skill-name">Python</div>
+              <div class="skill-type">Programming</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="skill-name">Power BI</div>
+              <div class="skill-type">Analytics</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-jira"></i>
+              </div>
+              <div class="skill-name">Jira</div>
+              <div class="skill-type">Project Management</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages Section - Centered -->
+        <div class="languages-section">
+          <h3
+            style="
+              text-align: center;
+              font-size: 1.8rem;
+              margin-bottom: 30px;
+              color: transparent;
+              background: linear-gradient(90deg, var(--primary), var(--accent));
+              -webkit-background-clip: text;
+              background-clip: text;
+            "
+          >
+            <i class="fas fa-language"></i> Languages
+          </h3>
+          <div class="languages-container">
+            <div class="language-item">
+              <div class="language-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="language-name">English</div>
+              <div class="language-level">Professional Proficiency</div>
+            </div>
+            <div class="language-item">
+              <div class="language-icon">
+                <i class="fas fa-flag"></i>
+              </div>
+              <div class="language-name">Hindi</div>
+              <div class="language-level">Native Speaker</div>
+            </div>
+            <div class="language-item">
+              <div class="language-icon">
+                <i class="fas fa-landmark"></i>
+              </div>
+              <div class="language-name">Marathi</div>
+              <div class="language-level">Native Speaker</div>
+            </div>
+            <div class="language-item">
+              <div class="language-icon">
+                <i class="fas fa-hand-paper"></i>
+              </div>
+              <div class="language-name">Braille</div>
+              <div class="language-level">Basic Knowledge</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <h2>Achievements</h2>
+          <p>
+            Recognition and accomplishments in academics, technology
+            competitions, and beyond.
+          </p>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card highlight">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Smart India Hackathon 2024 Winner</h3>
+            <p>
+              Led a team to victory in the national-level Smart India Hackathon
+              2024 with an innovative tech solution addressing a critical
+              government problem.
+            </p>
+            <span class="reward"
+              >Reward: ₹1,00,000 cash prize + Internship offers</span
+            >
+
+            <div class="certificate-preview">
+              <i class="fas fa-certificate"></i>
+              <p>Certificate of Excellence - National Level Winner</p>
+              <a href="#" class="view-certificate" data-certificate="sih2024">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Smart India Hackathon 2022 Grand Finalist</h3>
+            <p>
+              Selected as a grand finalist among top teams nationwide. Presented
+              our solution to industry experts and government officials.
+            </p>
+
+            <div class="certificate-preview">
+              <i class="fas fa-award"></i>
+              <p>Certificate of Participation - Grand Finalist</p>
+              <a href="#" class="view-certificate" data-certificate="sih2022">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>GATE CS Qualified</h3>
+            <p>
+              Successfully qualified the Graduate Aptitude Test in Engineering
+              (GATE) in Computer Science, demonstrating strong fundamentals.
+            </p>
+
+            <div class="certificate-preview">
+              <i class="fas fa-scroll"></i>
+              <p>GATE CS Qualified Certificate</p>
+              <a href="#" class="view-certificate" data-certificate="gate">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-swimmer"></i>
+            </div>
+            <h3>State Level Swimmer</h3>
+            <p>
+              Completed 2km and 5km long-distance sea swimming competitions at
+              state level, demonstrating discipline and endurance.
+            </p>
+
+            <div class="certificate-preview">
+              <i class="fas fa-water"></i>
+              <p>Swimming Achievement Certificates</p>
+              <a href="#" class="view-certificate" data-certificate="swimming">
+                <i class="fas fa-eye"></i> View Certificates
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggle for More Achievements -->
+        <button class="toggle-btn" id="toggleAchievements">
+          More Achievements <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <!-- More Achievements Section -->
+        <div class="more-achievements" id="moreAchievements">
+          <div class="more-achievements-grid">
+            <div class="achievement-small-card">
+              <div class="achievement-small-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h4>High School Topper</h4>
+              <p>Rank 1 in High School with 88.83%</p>
+            </div>
+
+            <div class="achievement-small-card">
+              <div class="achievement-small-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Academic Excellence</h4>
+              <p>90.60% in School (Don Bosco)</p>
+            </div>
+
+            <div class="achievement-small-card">
+              <div class="achievement-small-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Hackathon Experience</h4>
+              <p>Multiple national hackathon participations</p>
+            </div>
+
+            <div class="achievement-small-card">
+              <div class="achievement-small-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h4>Swimming Certificates</h4>
+              <p>Long distance sea swimming achievements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>
+            Real-world applications and solutions developed using various
+            technologies.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <div class="project-content">
+              <h3>Prem Foundation Nashik</h3>
+              <p>
+                Official website for Prem Foundation Nashik, an NGO dedicated to
+                social causes. Developed with modern web technologies focusing
+                on performance and user experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://premfoundation.co.in"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="project-content">
+              <h3>VerseCraft</h3>
+              <p>
+                A creative platform for music composition and collaboration.
+                Allows users to create, share, and collaborate on musical
+                projects with an intuitive interface.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://versecraft.vercel.app"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="project-content">
+              <h3>Library Manager</h3>
+              <p>
+                A comprehensive library management system with book tracking,
+                member management, and transaction handling. Features include
+                automated reminders and reporting.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Swing GUI</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">Reports</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p>
+            I'm currently open to new opportunities and interesting projects.
+            Feel free to reach out!
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>
+              Whether you have a project in mind, want to collaborate, or just
+              want to say hello, I'd love to hear from you!
+            </p>
+
+            <div class="contact-card">
+              <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+              <p>Nashik, Maharashtra, India</p>
+            </div>
+
+            <div class="contact-card">
+              <h4><i class="fas fa-envelope"></i> Email</h4>
+              <p>
+                <a href="mailto:mrshirsath18@gmail.com"
+                  >mrshirsath18@gmail.com</a
+                >
+              </p>
+              <p>Response time: Within 24 hours</p>
+            </div>
+
+            <div class="contact-card">
+              <h4><i class="fas fa-phone"></i> Phone</h4>
+              <p><a href="tel:+917798072763">+91 7798072763</a></p>
+              <p>Available: 9 AM - 7 PM IST</p>
+            </div>
+
+            <div class="contact-card">
+              <h4><i class="fas fa-share-alt"></i> Connect With Me</h4>
+              <div class="social-links">
+                <a
+                  href="https://github.com/masterpiece-1802"
+                  target="_blank"
+                  class="social-link"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/mohitshirsath18"
+                  target="_blank"
+                  class="social-link"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://instagram.com/masterpiece_1802"
+                  target="_blank"
+                  class="social-link"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="social-link"
+                  title="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://t.me"
+                  target="_blank"
+                  class="social-link"
+                  title="Telegram"
+                >
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a
+                  href="https://wa.me/917798072763"
+                  target="_blank"
+                  class="social-link"
+                  title="WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <p>
+              Have a question or want to work together? Fill out the form below
+              and I'll get back to you as soon as possible.
+            </p>
+
+            <form
+              action="https://formsubmit.co/mrshirsath18@gmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact - Mohit Shirsath"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="#" />
+
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn" style="width: 100%">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Mohit Raju Shirsath. All rights reserved.</p>
+        <p>
+          Designed with
+          <i class="fas fa-heart" style="color: var(--accent)"></i> and
+          <i class="fas fa-code" style="color: var(--primary)"></i> by Mohit
+          Shirsath
+        </p>
+      </div>
+    </footer>
+
+    <!-- Download Resume Button -->
+    <a href="resume.pdf" download class="resume-download" id="resumeDownload">
+      <i class="fas fa-download"></i>
+      <span>Download Resume</span>
+    </a>
+
+    <script src="main.js"></script>
+  </body>
+</html>
