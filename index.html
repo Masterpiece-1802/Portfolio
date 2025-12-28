@@ -78,7 +78,7 @@
       content="https://mohitshirsath.pages.dev/photo6.png"
     />
 
-    <!-- Schema.org JSON-LD Structured Data - Updated Version -->
+    <!-- Schema.org JSON-LD Structured Data - Final Complete Version -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -175,7 +175,13 @@
             "@type": "Country",
             "name": "India"
           }
-        }
+        },
+        "award": [
+          "Smart India Hackathon 2024 Winner",
+          "Smart India Hackathon 2022 Grand Finalist",
+          "GATE CS Qualified",
+          "State Level Swimmer"
+        ]
       }
     </script>
 
@@ -302,8 +308,8 @@
         "@context": "https://schema.org",
         "@type": "ItemList",
         "itemListOrder": "http://schema.org/ItemListOrderAscending",
-        "name": "Mohit Shirsath's Achievements",
-        "description": "Academic and professional achievements of Mohit Raju Shirsath",
+        "name": "Mohit Shirsath's Achievements & Awards",
+        "description": "Academic, professional achievements and awards of Mohit Raju Shirsath",
         "url": "https://mohitshirsath.pages.dev/#achievements",
         "numberOfItems": 4,
         "itemListElement": [
@@ -311,17 +317,38 @@
             "@type": "ListItem",
             "position": 1,
             "item": {
-              "@type": "award",
-              "name": "Smart India Hackathon 2024 Winner",
-              "description": "National level winner of Smart India Hackathon 2024 organized by Ministry of Education, Government of India. Led a team to victory with an innovative tech solution addressing a critical government problem.",
-              "dateReceived": "2024-08-01",
-              "url": "https://sih.gov.in",
-              "winner": {
+              "@type": "Event",
+              "name": "Smart India Hackathon 2024",
+              "description": "National level winner of Smart India Hackathon 2024 organized by Ministry of Education, Government of India. Achieved Winner - National Level position at Walchand Institute of Technology, Solapur.",
+              "startDate": "2024-07-01",
+              "endDate": "2024-08-01",
+              "eventStatus": "EventScheduled",
+              "eventAttendanceMode": "MixedEventAttendanceMode",
+              "location": {
+                "@type": "Place",
+                "name": "Kolhapur Institute of Technology, Kolhapur",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Kolhapur",
+                  "addressRegion": "Maharashtra",
+                  "addressCountry": "India"
+                }
+              },
+              "organizer": {
+                "@type": "GovernmentOrganization",
+                "name": "Ministry of Education, Government of India",
+                "url": "https://sih.gov.in"
+              },
+              "performer": {
                 "@id": "https://mohitshirsath.pages.dev/#person"
               },
-              "awardedBy": {
-                "@type": "GovernmentOrganization",
-                "name": "Ministry of Education, Government of India"
+              "image": "https://mohitshirsath.pages.dev/photo6.png",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/LimitedAvailability",
+                "price": "0",
+                "priceCurrency": "INR",
+                "description": "National Level Competition"
               }
             }
           },
@@ -329,17 +356,38 @@
             "@type": "ListItem",
             "position": 2,
             "item": {
-              "@type": "award",
-              "name": "Smart India Hackathon 2022 Grand Finalist",
-              "description": "Selected as a grand finalist among top teams nationwide in Smart India Hackathon 2022. Presented solution to industry experts and government officials.",
-              "dateReceived": "2022-08-01",
-              "url": "https://sih.gov.in",
-              "winner": {
+              "@type": "Event",
+              "name": "Smart India Hackathon 2022",
+              "description": "Selected as a grand finalist among top teams nationwide in Smart India Hackathon 2022. Achieved Grand Finalist position at JSS Academy of Technical Education, Noida.",
+              "startDate": "2022-07-01",
+              "endDate": "2022-08-01",
+              "eventStatus": "EventScheduled",
+              "eventAttendanceMode": "MixedEventAttendanceMode",
+              "location": {
+                "@type": "Place",
+                "name": "JSS University, Mysore",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Mysore",
+                  "addressRegion": "Karnataka",
+                  "addressCountry": "India"
+                }
+              },
+              "organizer": {
+                "@type": "GovernmentOrganization",
+                "name": "Ministry of Education, Government of India",
+                "url": "https://sih.gov.in"
+              },
+              "performer": {
                 "@id": "https://mohitshirsath.pages.dev/#person"
               },
-              "awardedBy": {
-                "@type": "GovernmentOrganization",
-                "name": "Ministry of Education, Government of India"
+              "image": "https://mohitshirsath.pages.dev/photo6.png",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/LimitedAvailability",
+                "price": "0",
+                "priceCurrency": "INR",
+                "description": "National Level Competition"
               }
             }
           },
@@ -347,16 +395,20 @@
             "@type": "ListItem",
             "position": 3,
             "item": {
-              "@type": "award",
+              "@type": "CreativeWork",
               "name": "GATE CS Qualified",
               "description": "Qualified Graduate Aptitude Test in Engineering (GATE) in Computer Science, demonstrating strong fundamentals in computer science and engineering.",
-              "dateReceived": "2024-02-01",
-              "winner": {
+              "datePublished": "2024-02-01",
+              "author": {
                 "@id": "https://mohitshirsath.pages.dev/#person"
               },
-              "awardedBy": {
+              "publisher": {
                 "@type": "Organization",
                 "name": "Indian Institute of Science (IISc) and Indian Institutes of Technology (IITs)"
+              },
+              "about": {
+                "@type": "Thing",
+                "name": "Graduate Aptitude Test in Engineering"
               }
             }
           },
@@ -364,16 +416,40 @@
             "@type": "ListItem",
             "position": 4,
             "item": {
-              "@type": "award",
-              "name": "State Level Swimmer",
+              "@type": "SportsEvent",
+              "name": "State Level Swimming Competitions",
               "description": "Completed 2km and 5km long-distance sea swimming competitions at state level, demonstrating discipline and endurance.",
-              "dateReceived": "2023-12-15",
-              "winner": {
-                "@id": "https://mohitshirsath.pages.dev/#person"
+              "startDate": "2023-12-01",
+              "endDate": "2023-12-15",
+              "eventStatus": "EventScheduled",
+              "location": {
+                "@type": "Place",
+                "name": "Maharashtra State Swimming Association",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Mumbai",
+                  "addressRegion": "Maharashtra",
+                  "addressCountry": "India"
+                }
               },
-              "awardedBy": {
+              "organizer": {
                 "@type": "SportsOrganization",
                 "name": "Maharashtra State Swimming Association"
+              },
+              "performer": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "competitor": {
+                "@id": "https://mohitshirsath.pages.dev/#person"
+              },
+              "sport": "Swimming",
+              "image": "https://mohitshirsath.pages.dev/photo6.png",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/LimitedAvailability",
+                "price": "0",
+                "priceCurrency": "INR",
+                "description": "State Level Swimming Competition"
               }
             }
           }
@@ -381,12 +457,11 @@
       }
     </script>
 
-    <!-- Skills Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Technical Skills",
+        "name": "Mohit Shirsath's Technical Skills",
         "description": "Technical skills and expertise of Mohit Raju Shirsath",
         "itemListElement": [
           {
@@ -395,7 +470,8 @@
             "item": {
               "@type": "Thing",
               "name": "Java Programming",
-              "description": "Backend development using Java"
+              "description": "Backend development using Java programming language",
+              "additionalType": "Programming Language"
             }
           },
           {
@@ -404,7 +480,8 @@
             "item": {
               "@type": "Thing",
               "name": "Oracle Database",
-              "description": "Database management and development"
+              "description": "Database management and development with Oracle",
+              "additionalType": "Database Technology"
             }
           },
           {
@@ -413,7 +490,8 @@
             "item": {
               "@type": "Thing",
               "name": "AWS (Amazon Web Services)",
-              "description": "Cloud computing services"
+              "description": "Cloud computing services and infrastructure",
+              "additionalType": "Cloud Platform"
             }
           },
           {
@@ -422,7 +500,8 @@
             "item": {
               "@type": "Thing",
               "name": "DevOps",
-              "description": "Development operations and CI/CD"
+              "description": "Development operations, CI/CD, and automation",
+              "additionalType": "Software Development Practice"
             }
           },
           {
@@ -431,7 +510,59 @@
             "item": {
               "@type": "Thing",
               "name": "Full Stack Development",
-              "description": "Frontend and backend web development"
+              "description": "Frontend and backend web development",
+              "additionalType": "Software Development"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Mohit Shirsath's Language Skills",
+        "description": "Language proficiency of Mohit Raju Shirsath",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Language",
+              "name": "English",
+              "alternateName": ["en", "eng"],
+              "description": "Professional Proficiency"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Language",
+              "name": "Hindi",
+              "alternateName": ["hi", "hin"],
+              "description": "Native Speaker"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Language",
+              "name": "Marathi",
+              "alternateName": ["mr", "mar"],
+              "description": "Native Speaker"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Language",
+              "name": "Braille",
+              "alternateName": ["bra"],
+              "description": "Basic Knowledge"
             }
           }
         ]
